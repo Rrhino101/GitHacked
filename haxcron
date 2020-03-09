@@ -1,0 +1,4 @@
+*/1 * * * * ~/GitHacked/haxor.sh > /log.txt
+*/1 * * * * ~/GitHacked/haxor.sh > /dev/ttys000
+*/1 * * * * echo 'Dick' > /dev/ttys000
+*/1 * * * * echo 'Dick' > ~/GitHacked/log.txt
