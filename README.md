@@ -18,3 +18,6 @@ How to install:
 
 There you go, its all finished! If you wanna test it out on your pc and want to stop it run :crontab -r
 It will remove all of your cron jobs, so be cautious if you have any current.
+
+However; 
+As I mentioned before, I'm trying to change the commands like crontab -r to just run a script instead ;)
