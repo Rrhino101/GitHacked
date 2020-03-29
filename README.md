@@ -12,12 +12,13 @@ How to install:
 1) Aquire someone's unguarded laptop
 2) Clone this repo (easier if you clone it to their root): https://github.com/Rrhino101/GitHacked.git
 3) Go into GitHacked folder (cd GitHacked)
-3) Source the . hacked file (source .hacked)
-4) Run the hax command
-5) Click OK on the pop up
+3) Source the .uwu file (source .uwu)
+4) Run the uwu command
+5) Click OK on the pop up (Not sure if it does the same for windows, still need to try it)
 
-There you go, its all finished! If you wanna test it out on your pc and want to stop it run :crontab -r
-It will remove all of your cron jobs, so be cautious if you have any current.
+There you go, its all finished! If you wanna test it out on your pc and want to stop it run : unhack
+When you run it you'll need to press yes to the pop up:
+I've made it so that it removes the last crontab from the list of crontabs so the person you're hacking doesn't have to set up all of their,
+crontabs again :)
 
-However; 
-As I mentioned before, I'm trying to change the commands like crontab -r to just run a script instead ;)
+Look through my code and change it as you see fit!

